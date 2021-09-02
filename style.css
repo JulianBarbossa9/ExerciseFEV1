@@ -12,23 +12,44 @@
                         "section5 section5"
                         "footer footer";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 400px 200px 200px 200px 500px 400px 300px;
+    grid-template-rows: 50px 700px 600px 600px 700px 500px 400px 300px;
 }
-
+body, p{
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
 .logo{
     grid-area: logo;
-    background-color: blue;
+    background-color:  hsl(7, 99%, 70%);
     display: flex;
-    /* flex-direction: row;justify-content: flex-end; */
     align-items: center;
 }
+h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 1000;
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 1000;
+}
+
 .logo h2{
     margin-left: 10px;
 }
 
 .menu-buttons{
-    margin-left: 840px;
-    border: 5px solid #000; 
+    margin-left: 820px;
+    
 }
 
 
@@ -37,9 +58,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center; 
-    /* flex-direction:column; */
     text-align: center;
-    border: 5px solid #000; 
+    flex-direction: column;
+    background: url('./images/desktop/image-header.jpg') no-repeat center center;
+    background-size: cover;
+   
 
 }
 
@@ -47,22 +70,59 @@ header{
 
 .section1-a{
     grid-area: section1-a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+
+.info.info2{
+    margin: 0px 50px;
+}
+
+h2{
+    font-weight: 900;
+}
+
+p {
+    color: hsl(213, 9%, 39%);
+    font-weight: 50;
+
 }
 
 .section1-b{
-    grid-area: section1-b
+    grid-area: section1-b;
+    background: url('./images/desktop/image-transform.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 .section2-a{
     grid-area: section2-a;
+    background: url('./images/desktop/image-stand-out.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 .section2-b{
     grid-area: section2-b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    
 }
+
+/* .info2{
+    
+    margin: 0px 50px;
+} */
 
 .section3-a{
     grid-area: section3-a;
+    background: url('./images/desktop/image-graphic-design.jpg') no-repeat center center;
+    background-size: cover;
+    
 }
 
 .section3-b{
