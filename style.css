@@ -12,18 +12,21 @@
                         "section5 section5"
                         "footer footer";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 700px 600px 600px 700px 500px 400px 300px;
+    grid-template-rows: 50px 700px 600px 600px 700px 700px 550px 300px;
 }
 body, p{
     font-size: 18px;
     font-family: 'Barlow', sans-serif;
 }
+
 .logo{
     grid-area: logo;
     background-color:  hsl(7, 99%, 70%);
     display: flex;
     align-items: center;
+    /* justify-content: flex-end; */
 }
+
 h1{
     font-family: 'Fraunces', serif;
     font-weight: 1000;
@@ -35,20 +38,68 @@ h1{
 h2{
     font-family: 'Fraunces', serif;
     font-size: 3rem;
+    font-weight: 900;
 }
+
+
+.textColor1{
+    margin-top: 300px;
+}
+.titleColorGreen{
+    color: hsl(167, 40%, 24%);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    
+}
+
+.colorText1{
+    color: hsl(167, 40%, 24%);
+}
+
+.textColor{
+    margin-top: 300px;
+}
+
+.titleColorBlue{
+    color:hsl(198, 62%, 26%) ;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    
+}
+.colorText2{
+    color: hsl(198, 62%, 26%);
+}
+
+.titleClient{
+    color: hsl(232, 10%, 55%);
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    letter-spacing: 3pt;
+    /* font-weight: 700; */
+}
+
+
 
 p{
     font-size: 1rem;
     font-family: 'Barlow', sans-serif;
     font-weight: 1000;
+    color: hsl(213, 9%, 39%);
+    font-weight: 50;
 }
 
-.logo h2{
+.logo img{
     margin-left: 10px;
 }
 
 .menu-buttons{
-    margin-left: 820px;
+    /* margin-left: 1440px; */
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid red; 
+    text-align: right;
+    
     
 }
 
@@ -81,15 +132,6 @@ header{
     margin: 0px 50px;
 }
 
-h2{
-    font-weight: 900;
-}
-
-p {
-    color: hsl(213, 9%, 39%);
-    font-weight: 50;
-
-}
 
 .section1-b{
     grid-area: section1-b;
@@ -122,23 +164,53 @@ p {
     grid-area: section3-a;
     background: url('./images/desktop/image-graphic-design.jpg') no-repeat center center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     
 }
 
 .section3-b{
     grid-area: section3-b;
+    background: url('./images/desktop/image-photography.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 }
 
 .section4{
     grid-area: section4; 
     align-items: center;
     text-align: center;
-    /* border: 5px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
     
 }
 .contact{
     display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.contac1,.contac2,.contac3{
+    justify-content: space-between;
+    margin: 0px 90px;
+
+}
+
+ div .avatar{
+    /* background-repeat: no-repeat; */
+    /* background-position: 50%; */
+    border-radius: 50%;
+    /* background-size: 100% auto; */
 }
 
 
@@ -164,8 +236,8 @@ footer{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    /* border: 5px solid #000; */
     flex-direction: column;
+    background-color:hsl(168, 30%, 48%);
 }
 
 .about-footer button{
