@@ -3,7 +3,7 @@
     max-width: 100%;
     position: relative;
     margin: auto;
-    grid-template-areas:"logo logo"
+    grid-template-areas:"logo menuButtons"
                         "header header"
                         "section1-a section1-b"
                         "section2-a section2-b"
@@ -21,7 +21,7 @@ body, p{
 
 .logo{
     grid-area: logo;
-    background-color:  hsl(7, 99%, 70%);
+    background-color:#3dbeff;
     display: flex;
     align-items: center;
     /* justify-content: flex-end; */
@@ -41,15 +41,20 @@ h2{
     font-weight: 900;
 }
 
+h4{
+    font-family: 'Fraunces', serif;
+}
+
+
 
 .textColor1{
     margin-top: 300px;
 }
+
 .titleColorGreen{
     color: hsl(167, 40%, 24%);
     font-family: 'Fraunces', serif;
     font-size: 2rem;
-    
 }
 
 .colorText1{
@@ -77,6 +82,7 @@ h2{
     margin-bottom: 80px;
     letter-spacing: 3pt;
     /* font-weight: 700; */
+    
 }
 
 
@@ -95,14 +101,39 @@ p{
 
 .menu-buttons{
     /* margin-left: 1440px; */
+    grid-area: menuButtons;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
-    border: 2px solid red; 
-    text-align: right;
+    background-color:  #3dbeff;
     
     
 }
 
+.btn1{
+    margin: 0px 30px;
+    
+}
+
+.btnStyle{
+    color: white;
+    /* border: 2px solid red; */
+    font-family: 'Fraunces', serif;
+    background: transparent;
+    border-radius: 70px;
+    margin: 0px 15px;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: transparent;
+    cursor: pointer;
+}
+
+
+
+.btnStyle:hover{
+    background-color:  hsl(198, 62%, 26%);
+    
+}
 
 header{
     grid-area: header;
@@ -209,7 +240,7 @@ header{
  div .avatar{
     /* background-repeat: no-repeat; */
     /* background-position: 50%; */
-    border-radius: 50%;
+    border-radius: 80%;
     /* background-size: 100% auto; */
 }
 
@@ -237,11 +268,29 @@ footer{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    background-color:hsl(168, 30%, 48%);
+    background-color:#92d3c5;
 }
 
 .about-footer button{
-    margin-left: 20px;
+    margin: 0px 20px;
+    color: hsl(167, 40%, 24%);
+    font-family: 'Barlow', sans-serif;
+    background: transparent;
+    border: transparent;
+    font-size:16px;
+    cursor: pointer;
+}
+.about-footer button:hover{
+    color: white;
+}
+
+
+.titleF{
+    color: hsl(167, 40%, 24%);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    
 }
 
 .about-footer{
@@ -249,13 +298,65 @@ footer{
     /* margin-top: 50px; */
     width: 500px;
     justify-content: space-around;
-  
+    
 }
 
 .redes{
     /* border: 4px solid red;  */
-    margin-top: 80px;
+   
+   
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    
 }
+
+.btnRed1{
+    background: transparent;
+    border: none;
+    background-image: url('./images/icon-facebook.svg');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.btnRed1:hover{
+    background: white;
+}
+
+.btnRed2{
+    background: transparent;
+    border: none;
+    background-image: url('./images/icon-instagram.svg');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.btnRed3{
+    background: transparent;
+    border: none;
+    background-image: url('./images/icon-twitter.svg');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.btnRed4{
+    background: transparent;
+    border: none;
+    background-image: url('./images/icon-pinterest.svg');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
 
 
 
