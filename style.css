@@ -1,10 +1,16 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+
 .container{
     display: grid;
     max-width: 100%;
     position: relative;
     margin: auto;
-    grid-template-areas:"logo menuButtons"
-                        "header header"
+    grid-template-areas:"header header"
+                        "section1 section1"
                         "section1-a section1-b"
                         "section2-a section2-b"
                         "section3-a section3-b"
@@ -12,20 +18,75 @@
                         "section5 section5"
                         "footer footer";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 700px 600px 600px 700px 700px 550px 300px;
+    grid-template-rows:100px  700px 600px 600px 700px 700px 550px 300px;
 }
+
 body, p{
     font-size: 18px;
     font-family: 'Barlow', sans-serif;
 }
 
+.header{
+    grid-area: header;
+    background-color:#3dbeff;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /*--------Importante-------- esto se hace para que la barra del menu no quede tan separada*/
+    /* max-width: 992px;
+    margin: 0 auto; */
+}
+
+.nav-link{
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    color: white;
+    
+}
+
 .logo{
-    grid-area: logo;
+    
+    padding: 35px 40px;
+    line-height: 80px;
+}
+
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    margin: 0px 30px;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 20px 30px;
+    border-radius: 70px;
+}
+
+.nav-menu-link:hover{
+    background-color: #6fcfff;
+    transition: .5s;
+}
+
+
+
+
+
+/* .headerSection{
+    grid-area: headerSection;
     background-color:#3dbeff;
     display: flex;
-    align-items: center;
-    /* justify-content: flex-end; */
-}
+    justify-content: space-between;
+} */
 
 h1{
     font-family: 'Fraunces', serif;
@@ -44,8 +105,6 @@ h2{
 h4{
     font-family: 'Fraunces', serif;
 }
-
-
 
 .textColor1{
     margin-top: 300px;
@@ -85,8 +144,6 @@ h4{
     
 }
 
-
-
 p{
     font-size: 1rem;
     font-family: 'Barlow', sans-serif;
@@ -95,12 +152,12 @@ p{
     font-weight: 50;
 }
 
-.logo img{
+/* .logo img{
     margin-left: 10px;
-}
+} */
 
-.menu-buttons{
-    /* margin-left: 1440px; */
+/* .menu-buttons{
+   
     grid-area: menuButtons;
     display: flex;
     align-items: center;
@@ -108,16 +165,16 @@ p{
     background-color:  #3dbeff;
     
     
-}
+} */
 
-.btn1{
+/* .btn1{
     margin: 0px 30px;
     
-}
+} */
 
-.btnStyle{
+/* .btnStyle{
     color: white;
-    /* border: 2px solid red; */
+    
     font-family: 'Fraunces', serif;
     background: transparent;
     border-radius: 70px;
@@ -126,17 +183,16 @@ p{
     padding: 10px 15px;
     border: transparent;
     cursor: pointer;
-}
+} */
 
 
 
 .btnStyle:hover{
     background-color:  hsl(198, 62%, 26%);
-    
 }
 
-header{
-    grid-area: header;
+.section1{
+    grid-area: section1;
     display: flex;
     justify-content: center;
     align-items: center; 
