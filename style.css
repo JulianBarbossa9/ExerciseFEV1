@@ -18,7 +18,7 @@
                         "section5 section5"
                         "footer footer";
     grid-template-columns: 50% 50%;
-    grid-template-rows:100px 700px 600px 600px 700px 700px 550px 300px;
+    grid-template-rows:100px 700px 600px 600px 700px 700px 560px 400px;
 }
 
 body, p{
@@ -269,19 +269,22 @@ p{
 
 
 .section5 {
-   display: flex;
-   grid-area: section5;
+    grid-area: section5;
+    display: flex;
  
-  
 }
 
 #im1,#im2,#im3,#im4{
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex-grow: 2;
+    flex-shrink: 5;
     flex-basis: 500px ;
+    width: 100%;
+    height: auto;
 }
 
-
+/* .section5 .image{
+    width: 50%;
+} */
 
 
 footer{
@@ -384,23 +387,18 @@ footer{
         grid-area: header;
         background-color:#3dbeff;
         grid-template-rows: 10px;
-
-        
+ 
     }
-    
-    
+  
     .logo{
         padding: 35px 30px;
         
     }
-
     .nav-link{
         color: hsl(232, 10%, 55%);
         
 
     }
-    
-    
     .nav-menu{
         flex-direction: column;
         margin-right: 60px;
@@ -444,6 +442,103 @@ footer{
 
     .nav-menu_visible{
         left: 0;
+    }
+
+    .container{
+        display: grid;
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        grid-template-areas:"header "
+                            "section1"
+                            "section1-b"
+                            "section1-a"
+                            "section2-a"
+                            "section2-b"
+                            "section3-a"
+                            "section3-b"
+                            "section4"
+                            "section5"
+                            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows:100px 700px 500px 600px 500px 600px 800px 800px 1300px 600px 400px;
+        flex-wrap: wrap;
+    }
+
+    .header{
+        grid-area: header;
+    }
+
+    .section1{
+        grid-area:section1;
+    }
+
+    .section1-b{
+        grid-area: section1-b;
+    }
+    
+    .section1-a{
+        grid-area: section1-a;
+        text-align: center;
+    }
+
+    h2{
+        margin-bottom: 40px;
+    }
+
+    p{
+        font-size: 19px;
+    }
+
+    
+    .section2-a{
+        grid-area: section2-a;
+    }
+    
+    .section2-b{
+        grid-area: section2-b;
+        text-align: center;
+    }
+
+    .section3-a{
+        grid-area: section3-a;
+    }
+
+    .section3-b{
+        grid-area: section3-b;
+    }
+
+    .section4{
+        grid-area:section4;
+        
+    }
+    
+    .contact{
+        flex-direction: column;
+    }
+
+    .contac1, .contac2, .contac3{
+        margin-bottom: 80px;
+    }
+
+
+    .section5{
+        grid-area: section5;
+        display: flex;
+        flex-wrap: wrap;
+    }
+     
+    .section5 .image{
+        width: 50%;
+    }
+
+    .section5 img{
+        width: calc(100% - (0px * 2));
+        margin: none;
+    }
+    
+    .footer{
+        grid-area: footer; 
     }
 }
 
